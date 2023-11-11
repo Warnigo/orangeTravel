@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Orange Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "icon" href =  
+"./img/icon.png" 
+        type = "image/x-icon"> 
+
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .swiper-slide {
+      position: relative;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide:nth-child(1) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/ireland.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .swiper-slide:nth-child(2) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/japan.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .swiper-slide:nth-child(3) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/rim.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      background-color: rgb(255, 123, 0);
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="phone-call">
+    <a href="tel:+998712450006"><i class="fa-solid fa-phone-volume fa-bounce fa-lg"></i></a>
+  </div>
+  <header>
+    <div class="header">
+      <div class="top-header">
+        <div class="left-top-header">
+          <div class="header-module">
+            <i class="fa-solid fa-phone"></i>
+            <p>+998 71-245-00-06</p>
+          </div>
+          <div class="header-module">
+            <i class="fa-solid fa-phone"></i>
+            <p>+998 99-846-66-66</p>
+          </div>
+        </div>
+        <div class="right-top-header">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/orangetraveluz/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://t.me/orangetraveluz"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+      <div class="line-header"></div>
+      <div class="bottom-header">
+          <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <img src="./img//logo-header-removebg-preview.png" width="160px" alt="" style="margin-top: -20px;">
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a href="#">Главная</a>
+              <a href="#tours">Туры</a>
+              <a href="https://t.me/perfect_tours">Контакты</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <h1>Путешествие должны быть доступны для всех.</h1>
+    <a href="https://t.me/perfect_tours" class="contact-button">СВЯЗАТЬСЯ > </a>
+  </section>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+    </div>
+  </div>
+
+  <section class="about-document">
+    <div class="container">
+      <div class="row">
+          <div class="cards-document">
+            <div class="card-document">
+              <div class="left-card-document">
+                <i class="fa-solid fa-passport"></i>
+              </div>
+              <div class="right-card-document">
+                <h3>Собрание документов</h3>
+                <p>Быстрый сбор документов</p>
+              </div>
+            </div>
+            <div class="card-document">
+              <div class="left-card-document">
+                <i class="fa-solid fa-wallet"></i>
+              </div>
+              <div class="right-card-document sh">
+                <h3>Приемлемые цены</h3>
+                <p>Выгодные цены и скидки</p>
+              </div>
+            </div>
+            <div class="card-document">
+              <div class="left-card-document">
+                <i class="fa-solid fa-face-smile-beam"></i>
+              </div>
+              <div class="right-card-document an">
+                <h3>Счастливые клиенты</h3>
+                <p>Удоволетворение От путешествий</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+    <!-- Swiper -->
+    <a href="#tours">
+      <swiper-container class="mySwiper"  effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-slide>
+      <img src="./img/france.jpeg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/Georgia.jpeg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/ireland.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/issiqkul.jpeg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/maldivi.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/japan.jpeg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/chexiya.jpeg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/italia.jpeg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/tailand.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/bali.jpeg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./img/turkey.webp" />
+    </swiper-slide>
+  </swiper-container>
+    </a>
+    
+
+  <section class="clients">
+    <div class="container">
+      <div class="row">
+        <div class="cards-client">
+          <div class="col-4 card-client">
+            <i class="fa-solid fa-face-smile-beam"></i>
+            <h4>700+</h4>
+            <p>Довольных клиентов</p>
+          </div>
+          <div class="col-4 card-client">
+            <i class="fa-solid fa-plane"></i>
+            <h4>120+</h4>
+            <p>Туров по всему миру</p>
+          </div>
+          <div class="col-4 card-client">
+            <i class="fa-solid fa-house"></i>
+            <h4>682+</h4>
+            <p>Отелей</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tours" id="tours">
+    <div class="container">
+        <div class="col-12">
+          <div class="header-tours">
+            <p>Туры</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="cards">
+            <div class="card">
+              <div class="img-card">
+                <img src="./img/umra.jpeg" alt="" height="200px" width="100%">
+              </div>
+              <div class="bottom-card-tours">
+                <div class="bottom-card">
+                  <h2>УМРА</h2>
+                  <p>7 Дней</p>
+                </div>
+                <div class="bottom-line">
+
+                </div>
+                <div class="price-card">
+                  <p>От <span>$1200</span></p>
+                  <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-card">
+                <img src="./img/qatar.webp" alt="" height="200px" width="100%">
+              </div>
+              <div class="bottom-card-tours">
+                <div class="bottom-card">
+                  <h2>Катар</h2>
+                  <p>7 Дней</p>
+                </div>
+                <div class="bottom-line">
+
+                </div>
+                <div class="price-card">
+                  <p>От <span>$556</span></p>
+                  <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-card">
+                <img src="./img/vietnam.webp" alt="" height="200px" width="100%">
+              </div>
+              <div class="bottom-card-tours">
+                <div class="bottom-card">
+                  <h2>Вьетнам</h2>
+                  <p>7 Дней</p>
+                </div>
+                <div class="bottom-line">
+
+                </div>
+                <div class="price-card">
+                  <p>От <span>$683</span></p>
+                  <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="img-card">
+                  <img src="./img/maldivi.webp" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Мальдивы (Мале)</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$835</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/shrilanka.webp" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Шри-Ланка</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$888</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            <div class="card">
+              <div class="img-card">
+                <img src="./img/goa.jpg" alt="" height="200px" width="100%">
+              </div>
+              <div class="bottom-card-tours">
+                <div class="bottom-card">
+                  <h2>Гоа</h2>
+                  <p>7 Дней</p>
+                </div>
+                <div class="bottom-line">
+
+                </div>
+                <div class="price-card">
+                  <p>От <span>$986</span></p>
+                  <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-card">
+                <img src="./img/mavrikiy.jpg" alt="" height="200px" width="100%">
+              </div>
+              <div class="bottom-card-tours">
+                <div class="bottom-card">
+                  <h2>Маврикий</h2>
+                  <p>7 Дней</p>
+                </div>
+                <div class="bottom-line">
+
+                </div>
+                <div class="price-card">
+                  <p>От <span>$1128</span></p>
+                  <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-card">
+                <img src="./img/indonesia.jpg" alt="" height="200px" width="100%">
+              </div>
+              <div class="bottom-card-tours">
+                <div class="bottom-card">
+                  <h2>Индонезия</h2>
+                  <p>7 Дней</p>
+                </div>
+                <div class="bottom-line">
+
+                </div>
+                <div class="price-card">
+                  <p>От <span>$953</span></p>
+                  <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-card">
+                <img src="./img/afrika.webp" alt="" height="200px" width="100%">
+              </div>
+              <div class="bottom-card-tours">
+                <div class="bottom-card">
+                  <h2>Африка</h2>
+                  <p>7 Дней</p>
+                </div>
+                <div class="bottom-line">
+
+                </div>
+                <div class="price-card">
+                  <p>От <span>$1850</span></p>
+                  <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="img-card">
+                  <img src="./img/oae.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>ОАЭ</h2>
+                    <p>6 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$400</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/japan.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Япония</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$1200</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/baku.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Азербайджан (Баку)</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$650</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/Georgia.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Грузия (Батуми+Тбилиси)</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$900</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/malaysia.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Малайзия (Лангкави+Куала-Лумпур)</h2>
+                    <p>8 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$975</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/tailand.webp" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Таиланд (Пхукет)</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$850</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/turkey.webp" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Турция (Анталья)</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$800</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/chexiya.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Чехия (Карловы-Вары)</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$999</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/zolotoe.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Золoтое Кольцо Турции</h2>
+                    <p>6 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$495</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/issiqkul.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Автобусный тур на Иссык-Куль</h2>
+                    <p>6 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$270</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/egypt.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Египет (Шарм-Эш-Шейх)</h2>
+                    <p>6 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$650</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card">
+                  <img src="./img/france.jpeg" alt="" height="200px" width="100%">
+                </div>
+                <div class="bottom-card-tours">
+                  <div class="bottom-card">
+                    <h2>Франция (Париж)</h2>
+                    <p>7 Дней</p>
+                  </div>
+                  <div class="bottom-line">
+  
+                  </div>
+                  <div class="price-card">
+                    <p>От <span>$1075</span></p>
+                    <a href="https://t.me/perfect_tours">Заказать<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="location">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Tashkent</a><a href="https://yandex.com/maps/10335/tashkent/?ll=69.233272%2C41.318699&mode=search&sll=69.232639%2C41.318778&text=41.318778%2C69.232639&utm_medium=mapframe&utm_source=maps&z=18.92" style="color:#eee;font-size:12px;position:absolute;top:14px;">Samarqand Darvoza Street — Yandex Maps</a><iframe src="https://yandex.com/map-widget/v1/?ll=69.233272%2C41.318699&mode=search&sll=69.232639%2C41.318778&text=41.318778%2C69.232639&z=18.92" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-contact">
+            <h2>Путешествия лишают тебя дара речи, а пoтом превращают в лучшего рассказчика</h2>
+            <a href="https://t.me/perfect_tours" class="contact-button">СВЯЗАТЬСЯ > </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="cards-footer">
+            <div class="card-footer-another">
+              <img src="./img/logo.png" width="150px" alt="">
+              <p style="margin-top: 25px;">г.Ташкент ул. С Дарвоза 2/1</p>
+              <div class="phone-footer">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+998712450006"><p>+998 71-245-00-06</p></a>
+              </div>
+              <div class="phone-footer">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+998998466666"><p>+998 99-846-66-66</p></a>
+              </div>
+            </div>
+            <div class="card-footer-another">
+              <p class="text">Популярные туры</p>
+              <ul>
+                <li><a href="#tours">Умра</a></li>
+                <li><a href="#tours">Золотое Кольцо Турции</a></li>
+                <li><a href="#tours">ОАЭ</a></li>
+                <li><a href="#tours">Турция (Анталья)</a></li>
+                <li><a href="#tours">Франция (Париж)</a></li>
+              </ul>
+            </div>
+
+            <div class="card-footer-another">
+              <div class="footer-social">
+                <p>Социальные сети</p>
+                <div class="icons-social">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/orangetraveluz/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://t.me/orangetraveluz"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      centeredSlides: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+  </script>
+</body>
+
+</html>
