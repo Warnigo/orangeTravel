@@ -100,6 +100,7 @@ nav{
 }
 /* home */
 section.home{
+    overflow: hidden;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.346);
     color:antiquewhite;
@@ -151,6 +152,7 @@ section.about-document{
 }
 
 .cards-document{
+    z-index: 999;
     width: 100%;
     display: flex;
     align-items:center;
@@ -493,7 +495,31 @@ footer{
         font-size: 22px;
     }
 }
-@media screen and (max-width:490px){
+@media screen and (max-width:700px){
+    .swiper-slide img{
+        display: none;
+    }
+    .swiper-slide:nth-child(1){
+       background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/japan.jpeg);
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .swiper-slide:nth-child(2){
+       background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/ireland.jpg);
+              background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .swiper-slide:nth-child(3){
+       background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/rim.jpg);
+              background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .swiper{
+        width: 260%;
+    }
     nav{
         display: flex;
     }
@@ -505,6 +531,9 @@ footer{
     }
     section.home{
         padding: 0 0 0px 30px;
+    }
+    section.home{
+        background-color: rgba(0, 0, 0, 0);
     }
     section.home h1{
         width: 70%;
@@ -535,6 +564,7 @@ footer{
     }
     section.about-document{
         height: 400px;
+        z-index: 999;
     }
     section.clients{
         height: 500px;
