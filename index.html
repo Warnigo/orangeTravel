@@ -14,7 +14,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel = "icon" href =  
-"./img/icon.png" 
+"./img/icon.png" sizes="16x32"
         type = "image/x-icon"> 
 
   <style>
@@ -48,29 +48,6 @@
       align-items: center;
     }
 
-    .swiper-slide:nth-child(1) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/ireland.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-
-    .swiper-slide:nth-child(2) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/japan.jpeg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-
-    .swiper-slide:nth-child(3) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/rim.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
 
     body {
       background: #eee;
@@ -80,7 +57,10 @@
       margin: 0;
       padding: 0;
     }
-
+    .swiper-slide img{
+      height: 100vh;
+      width: 100%;
+    }
     swiper-container {
       background-color: rgb(255, 123, 0);
       width: 100%;
@@ -121,7 +101,6 @@
           </div>
         </div>
         <div class="right-top-header">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
           <a href="https://www.instagram.com/orangetraveluz/"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://t.me/orangetraveluz"><i class="fa-brands fa-telegram"></i></a>
         </div>
@@ -159,9 +138,9 @@
   </section>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
+      <div class="swiper-slide"><img src="./img/rim.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/ireland.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/japan.jpeg" alt=""></div>
     </div>
   </div>
 
@@ -713,7 +692,6 @@
               <div class="footer-social">
                 <p>Социальные сети</p>
                 <div class="icons-social">
-                  <a href=""><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/orangetraveluz/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://t.me/orangetraveluz"><i class="fa-brands fa-telegram"></i></a>
                 </div>
